@@ -9,7 +9,7 @@ public class AnalyzeFile {
         try {
             String text = ReadFile.readFile("src/resources/SampleText.txt");
             // TODO: display analysis results here
-            // ex. System.out.println("Number of words: " + countWords(text))
+            System.out.println("Number of words: " + CountWords.countWords(text));
 
         } catch (Exception e) {
             e.printStackTrace();
