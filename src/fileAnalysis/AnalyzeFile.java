@@ -11,6 +11,8 @@ public class AnalyzeFile {
             // TODO: display analysis results here
             System.out.println("Number of words: " + CountWords.countWords(text));
 
+            int numOfVowels = CountVowels.countVowels(text);
+            System.out.println("Number of vowels: " + numOfVowels);
         } catch (Exception e) {
             e.printStackTrace();
         }
