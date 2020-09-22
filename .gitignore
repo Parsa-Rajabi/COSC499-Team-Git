@@ -1,5 +1,10 @@
 .idea
 .classpath
 .project
-COSC-499-git-team-exercise.iml
+.vscode
+*/cosc499-team-git-exercise.iml
+*.iml
+*/out
+lib/
 /bin/
+*.DS_Store
