@@ -8,12 +8,25 @@ public class CountVowels {
             int numVowels = 0; // create vowel counter
             //TODO
             //finish counting algorithm here
+            for (char ch : inputString.toCharArray()){
+                if (isVowel(ch)){
+                    numVowels++;
+                }
+            }
             return numVowels;
         } //close conditional
 
 
     } //close static method
 
+    public static boolean isVowel(char ch){
+        String possibleVowels = "AEIOUaeiou";
+                if (possibleVowels.indexOf(ch)==-1){
+                    return false;
+                } else {
+                    return true;
+                }
+    }
 
 
 } //close class
