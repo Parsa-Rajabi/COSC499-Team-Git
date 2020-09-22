@@ -60,7 +60,7 @@ class CountVowelsTest {
 		final int expectedResult = 0;
 
 		// Given text
-		final String givenText = "Whtvr, ths hs n vwls bt y cn stll rd t";
+		final String givenText = "Hw ds ths hs n vwls bt y cn stll rd t";
 
 		// When the input string is given
 		final int vowelCount = CountVowels.countVowels(givenText);
