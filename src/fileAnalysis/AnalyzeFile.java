@@ -8,12 +8,10 @@ public class AnalyzeFile {
     public static void analyzeFile() {
         try {
             String text = ReadFile.readFile("resources/SampleText.txt");
-            // TODO: display analysis results here
-            // ex. System.out.println("Number of words: " + countWords(text))
-
-
-
+            System.out.println("Number of words: " + CountWords.countWords(text));
             System.out.println("Number of characters: " + charCount.countChar(text));
+            int numOfVowels = CountVowels.countVowels(text);
+            System.out.println("Number of vowels: " + numOfVowels);
         } catch (Exception e) {
             e.printStackTrace();
         }
