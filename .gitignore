@@ -1,13 +1,10 @@
 .idea
 .classpath
 .project
-<<<<<<< HEAD
 .vscode
 */cosc499-team-git-exercise.iml
 *.iml
 */out
 lib/
-=======
-COSC-499-git-team-exercise.iml
 /bin/
->>>>>>> 9d532baef7ab91a59dde46a730b2f8078bf87670
+
