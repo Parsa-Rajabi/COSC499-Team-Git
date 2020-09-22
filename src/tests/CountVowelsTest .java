@@ -73,7 +73,7 @@ class CountVowelsTest {
 	public void countVowelsShouldReturnValueWhenTextWithOnlyCapitalizedVowelsIsGiven() {
 
 		// Expected result
-		final int expectedResult = 4;
+		final int expectedResult = 5;
 
 		// Given text
 		final String givenText = "HI, WHY AM I YELLING";
