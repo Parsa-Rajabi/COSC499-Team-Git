@@ -17,7 +17,7 @@ class CountWordsTest {
 		// Given text
 		String emptyText = "";
 		
-		// When the input string is empty
+		// When the input string is empty text
 		int wordCount = CountWords.countWords(emptyText);
 
 		// Then
