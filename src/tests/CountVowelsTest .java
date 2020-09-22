@@ -100,6 +100,7 @@ class CountVowelsTest {
 		// Then
 		assertEquals(expectedResult, vowelCount);
     }
+
     @Test
 	public void countVowelsShouldReturnOneWhenTheOnlyVowelIsTheLastChar() {
 		
@@ -108,6 +109,38 @@ class CountVowelsTest {
 				
 		// Given text
 		String givenText = "WHY?! No";
+				
+		// When the input string is given
+		int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+    }
+    
+    @Test
+	public void countVowelsShouldReturnTwoWhenTheOnlyVowelsAreTheFirstAndLastChars() {
+		
+		// Expected result
+		int expectedResult = 2;
+				
+		// Given text
+		String givenText = "Oh no";
+				
+		// When the input string is given
+		int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+    }
+    
+    @Test
+	public void countVowelsShouldReturnZeroWhenTheTextIsAllBasicNumbersAndSymbols() {
+		
+		// Expected result
+		int expectedResult = 0;
+				
+		// Given text
+		String givenText = "234%#&*%^$#+==";
 				
 		// When the input string is given
 		int vowelCount = CountVowels.countVowels(givenText);
