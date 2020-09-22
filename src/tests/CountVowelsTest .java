@@ -70,13 +70,29 @@ class CountVowelsTest {
 	}
 
 	@Test
-	public void countVowelsShouldReturnValuesWhenTextWithOnlyCapitalizedVowelsIsGiven() {
+	public void countVowelsShouldReturnValueWhenTextWithOnlyCapitalizedVowelsIsGiven() {
 
 		// Expected result
 		final int expectedResult = 4;
 
 		// Given text
 		final String givenText = "HI, WHY AM I YELLING";
+
+		// When the input string is given
+		final int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+	}
+
+	@Test
+	public void countVowelsShouldReturnValueWhenTextWithBothUpperAndLowercaseVowelsIsGiven() {
+
+		// Expected result
+		final int expectedResult = 13;
+
+		// Given text
+		final String givenText = "A bird ate my sandwich, so I need another.";
 
 		// When the input string is given
 		final int vowelCount = CountVowels.countVowels(givenText);
