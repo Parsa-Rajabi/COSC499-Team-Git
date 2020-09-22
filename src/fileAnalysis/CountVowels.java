@@ -1,32 +1,26 @@
 package fileAnalysis;
 
-public class CountVowels {
+public class CountVowels { //class for counting vowels
     public static int countVowels(String inputString){ //static -> takes string, returns integer
-        if (inputString==null || inputString.isEmpty()){ //Check for empty and null strings
-            return 0; //Empty and null strings have no vowels
+        if (inputString==null || inputString.isEmpty()){ //check for empty and null strings
+            return 0; //empty and null strings have no vowels
         } else {
-            int numVowels = 0; // create vowel counter
-            //TODO
-            //finish counting algorithm here
-            for (char ch : inputString.toCharArray()){
+            int numVowels = 0; //create vowel counter
+            for (char ch : inputString.toCharArray()){ //look at each letter individually
                 if (isVowel(ch)){
-                    numVowels++;
+                    numVowels++; //if ch is a vowel, increment the number of vowels found
                 }
             }
             return numVowels;
         } //close conditional
-
-
     } //close static method
 
-    public static boolean isVowel(char ch){
-        String possibleVowels = "AEIOUaeiou";
-                if (possibleVowels.indexOf(ch)==-1){
-                    return false;
-                } else {
-                    return true;
-                }
-    }
-
-
+    public static boolean isVowel(char ch){ //helper method for checking if character is a vowel
+        String possibleVowels = "AEIOUaeiou"; //list of possible vowels for comparison
+        if (possibleVowels.indexOf(ch)==-1){
+            return false; //not a vowel
+        } else {
+            return true; //is a vowel
+        }//close conditional
+    }//close helper method
 } //close class
