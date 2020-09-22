@@ -76,7 +76,7 @@ public class CountCharTest {
 	public void countCharShouldReturnValueWhenStringHasSpecialChar() {
 
 		// Expected result
-		int expectedResult = 23;
+		int expectedResult = 20;
 
 		// Given text
 		String givenText = ">Welcome, to COSC 499!<";
