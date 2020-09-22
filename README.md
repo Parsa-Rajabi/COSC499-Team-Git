@@ -37,6 +37,3 @@ After you have completed your code, but before you add and commit a pull request
 * `git stash // this saves all of your work to the stash and removes your changes from your local version`
 * `git pull --rebase origin develop	// this is going to get all the latest changes from develop. It is a good idea to get in the habit of rebasing (instead of merging)`
 * `git stash apply 	// reapply your changes that you stashed`
-
-
-
