@@ -10,144 +10,143 @@ class CountVowelsTest {
 	public void countVowelsShouldReturnZeroWhenTextIsEmpty() {
 		
 		// Expected result
-		int expectedResult = 0;
-		
+		final int expectedResult = 0;
+
 		// Given text
-		String emptyText = "";
-		
+		final String emptyText = "";
+
 		// When the input string is empty text
-		int vowelCount = CountVowels.countVowels(emptyText);
+		final int vowelCount = CountVowels.countVowels(emptyText);
 
 		// Then
 		assertEquals(expectedResult, vowelCount);
-    }
+	}
 
-    @Test
+	@Test
 	public void countVowelsShouldReturnZeroWhenTextIsNull() {
 		// Expected result
-		int expectedResult = 0;
-				
+		final int expectedResult = 0;
+
 		// Given text
-		String nullText = null;
-			
+		final String nullText = null;
+
 		// When the input string is null
-		int vowelCount = CountVowels.countVowels(nullText);
+		final int vowelCount = CountVowels.countVowels(nullText);
 
 		// Then
 		assertEquals(expectedResult, vowelCount);
 	}
-	
+
 	@Test
 	public void countVowelsShouldReturnNumberOfVowelsWhenTextWithLowercaseVowelsIsGiven() {
-		
+
 		// Expected result
-		int expectedResult = 7;
-				
+		final int expectedResult = 6;
+
 		// Given text
-		String givenText = "Whatever, this has vowels";
-				
+		final String givenText = "Sure, this has vowels";
+
 		// When the input string is given
-		int vowelCount = CountVowels.countVowels(givenText);
-
-		// Then
-		assertEquals(expectedResult, vowelCount);
-    }
-
-    @Test
-	public void countVowelsShouldReturnZeroWhenTextWithoutVowelsIsGiven() {
-		
-		// Expected result
-		int expectedResult = 0;
-				
-		// Given text
-		String givenText = "Whtvr, ths hs n vwls bt y cn stll rd t";
-				
-		// When the input string is given
-		int vowelCount = CountVowels.countVowels(givenText);
-
-		// Then
-		assertEquals(expectedResult, vowelCount);
-    }
-    
-    @Test
-	public void countVowelsShouldReturnValuesWhenTextWithOnlyCapitalizedVowelsIsGiven() {
-		
-		// Expected result
-		int expectedResult = 4;
-				
-		// Given text
-		String givenText = "HI, WHY AM I YELLING";
-				
-		// When the input string is given
-		int vowelCount = CountVowels.countVowels(givenText);
-
-		// Then
-		assertEquals(expectedResult, vowelCount);
-    }
-    
-    @Test
-	public void countVowelsShouldReturnOneWhenTheOnlyVowelIsTheFirstChar() {
-		
-		// Expected result
-		int expectedResult = 1;
-				
-		// Given text
-		String givenText = "Awwwwwwwwwwwwwww, why?";
-				
-		// When the input string is given
-		int vowelCount = CountVowels.countVowels(givenText);
-
-		// Then
-		assertEquals(expectedResult, vowelCount);
-    }
-
-    @Test
-	public void countVowelsShouldReturnOneWhenTheOnlyVowelIsTheLastChar() {
-		
-		// Expected result
-		int expectedResult = 1;
-				
-		// Given text
-		String givenText = "WHY?! No";
-				
-		// When the input string is given
-		int vowelCount = CountVowels.countVowels(givenText);
-
-		// Then
-		assertEquals(expectedResult, vowelCount);
-    }
-    
-    @Test
-	public void countVowelsShouldReturnTwoWhenTheOnlyVowelsAreTheFirstAndLastChars() {
-		
-		// Expected result
-		int expectedResult = 2;
-				
-		// Given text
-		String givenText = "Oh no";
-				
-		// When the input string is given
-		int vowelCount = CountVowels.countVowels(givenText);
-
-		// Then
-		assertEquals(expectedResult, vowelCount);
-    }
-    
-    @Test
-	public void countVowelsShouldReturnZeroWhenTheTextIsAllBasicNumbersAndSymbols() {
-		
-		// Expected result
-		int expectedResult = 0;
-				
-		// Given text
-		String givenText = "234%#&*%^$#+==";
-				
-		// When the input string is given
-		int vowelCount = CountVowels.countVowels(givenText);
+		final int vowelCount = CountVowels.countVowels(givenText);
 
 		// Then
 		assertEquals(expectedResult, vowelCount);
 	}
 
+	@Test
+	public void countVowelsShouldReturnZeroWhenTextWithoutVowelsIsGiven() {
+
+		// Expected result
+		final int expectedResult = 0;
+
+		// Given text
+		final String givenText = "Whtvr, ths hs n vwls bt y cn stll rd t";
+
+		// When the input string is given
+		final int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+	}
+
+	@Test
+	public void countVowelsShouldReturnValuesWhenTextWithOnlyCapitalizedVowelsIsGiven() {
+
+		// Expected result
+		final int expectedResult = 4;
+
+		// Given text
+		final String givenText = "HI, WHY AM I YELLING";
+
+		// When the input string is given
+		final int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+	}
+
+	@Test
+	public void countVowelsShouldReturnOneWhenTheOnlyVowelIsTheFirstChar() {
+
+		// Expected result
+		final int expectedResult = 1;
+
+		// Given text
+		final String givenText = "Awwwwwwwwwwwwwww, why?";
+
+		// When the input string is given
+		final int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+	}
+
+	@Test
+	public void countVowelsShouldReturnOneWhenTheOnlyVowelIsTheLastChar() {
+
+		// Expected result
+		final int expectedResult = 1;
+
+		// Given text
+		final String givenText = "WHY?! No";
+
+		// When the input string is given
+		final int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+	}
+
+	@Test
+	public void countVowelsShouldReturnTwoWhenTheOnlyVowelsAreTheFirstAndLastChars() {
+
+		// Expected result
+		final int expectedResult = 2;
+
+		// Given text
+		final String givenText = "Oh no";
+
+		// When the input string is given
+		final int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+	}
+
+	@Test
+	public void countVowelsShouldReturnZeroWhenTheTextIsAllBasicNumbersAndSymbols() {
+
+		// Expected result
+		final int expectedResult = 0;
+
+		// Given text
+		final String givenText = "234%#&*%^$#+==";
+
+		// When the input string is given
+		final int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
+	}
     
 }
