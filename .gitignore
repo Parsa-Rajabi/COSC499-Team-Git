@@ -2,4 +2,7 @@
 .classpath
 .project
 .vscode
-COSC-499-git-team-exercise.iml
+*/cosc499-team-git-exercise.iml
+*.iml
+*/out
+lib/
