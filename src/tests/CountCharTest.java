@@ -1,11 +1,11 @@
 package tests;
 
-import fileAnalysis.charCount;
+import fileAnalysis.CountChar;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class charCountTest {
+public class CountCharTest {
     
     @Test
 	public void countCharShouldReturnZeroWhenEmptyString() {
@@ -17,7 +17,7 @@ public class charCountTest {
 		String emptyText = "";
 		
 		// When the input string is empty text
-		int numChars = charCount.countChar(emptyText);
+		int numChars = CountChar.countChar(emptyText);
 
 		// Then
 		assertEquals(expectedResult, numChars);
@@ -34,7 +34,7 @@ public class charCountTest {
 		String givenText = "     p      ";
 
 		// When the input string is empty text
-		int numChars = charCount.countChar(givenText);
+		int numChars = CountChar.countChar(givenText);
 
 		// Then
 		assertEquals(expectedResult, numChars);
@@ -51,7 +51,7 @@ public class charCountTest {
 		String givenText = "teSt";
 
 		// When the input string is empty text
-		int numChars = charCount.countChar(givenText);
+		int numChars = CountChar.countChar(givenText);
 
 		// Then
 		assertEquals(expectedResult, numChars);
@@ -67,7 +67,7 @@ public class charCountTest {
 		String givenText = "450124";
 
 		// When the input string is empty text
-		int numChars = charCount.countChar(givenText);
+		int numChars = CountChar.countChar(givenText);
 
 		// Then
 		assertEquals(expectedResult, numChars);
@@ -82,7 +82,7 @@ public class charCountTest {
 		String givenText = ">Welcome, to COSC 499!<";
 
 		// When the input string is empty text
-		int numChars = charCount.countChar(givenText);
+		int numChars = CountChar.countChar(givenText);
 
 		// Then
 		assertEquals(expectedResult, numChars);
