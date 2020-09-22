@@ -51,6 +51,22 @@ class CountVowelsTest {
 
 		// Then
 		assertEquals(expectedResult, vowelCount);
+    }
+
+    @Test
+	public void countVowelsShouldReturnZeroWhenTextWithoutVowelsIsGiven() {
+		
+		// Expected result
+		int expectedResult = 0;
+				
+		// Given text
+		String givenText = "Whtvr, ths hs n vwls bt y cn stll rd t";
+				
+		// When the input string is given
+		int vowelCount = CountVowels.countVowels(givenText);
+
+		// Then
+		assertEquals(expectedResult, vowelCount);
 	}
 
     
