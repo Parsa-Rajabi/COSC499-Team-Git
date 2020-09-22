@@ -7,7 +7,7 @@ public class AnalyzeFile {
 
     public static void analyzeFile() {
         try {
-            String text = ReadFile.readFile("resources/SampleText.txt");
+            String text = ReadFile.readFile("src/resources/SampleText.txt");
             System.out.println("Number of words: " + CountWords.countWords(text));
             System.out.println("Number of characters: " + CountChar.countChar(text));
             int numOfVowels = CountVowels.countVowels(text);
