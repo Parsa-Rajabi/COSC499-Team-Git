@@ -12,6 +12,7 @@ public class AnalyzeFile {
             System.out.println("Number of characters: " + CountChar.countChar(text));
             int numOfVowels = CountVowels.countVowels(text);
             System.out.println("Number of vowels: " + numOfVowels);
+            System.out.println("Estimated time to read aloud (in minutes): " + Estimator.timeToReadAloud(text));
         } catch (Exception e) {
             e.printStackTrace();
         }
